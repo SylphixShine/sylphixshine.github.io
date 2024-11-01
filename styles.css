@@ -1,0 +1,44 @@
+/* styles.css */
+
+/* Estilos generales */
+.centered-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px - 56px); /* Restar la altura del navbar y el footer */
+}
+
+/* Ajustes para el div central */
+.centered-div {
+    width: 90%; /* Ajusta el tamaño del div para dispositivos móviles */
+    max-width: 600px; /* Limita el tamaño máximo del div */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo semitransparente */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilos para el footer */
+footer {
+    position: relative;
+    padding: 10px;
+    background-color: rgba(240, 82, 88, 0.9); /* Color del footer */
+    color: white; /* Color del texto del footer */
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* Ajusta la altura del navbar en móviles */
+    }
+
+    .centered-div-container {
+        height: auto; /* Permite que el contenedor ajuste su altura automáticamente */
+        padding: 10px; /* Añade un poco de padding */
+    }
+
+    .centered-div {
+        width: 95%; /* Hacer el div más ancho en móviles */
+    }
+}
